@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "NTNU Ping Pong League",
+    "description": "In this project the goal was to create a fully functional online table tennis league...",
+    "image": "img/ppl-mockup-desktop.png",
+    "alt": "Mockup of the ping pong league site",
+    "githubUrl": "https://github.com/Simenfhe/ppl",
+    "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/"
+  },
+  {
+    "id": 2,
+    "title": "AI Learning Tool",
+    "description": "In this project we are creating a tool that uses AI to assist teachers...",
+    "image": "img/ai-tool.png",
+    "alt": "Mockup of the website for the AI learning tool",
+    "githubUrl": "#",
+    "liveUrl": "#"
+  }
+]
