@@ -11,6 +11,7 @@ const styles = stylex.create({
         display: 'flex',
         alignItems: 'space-between',
         padding: '0.6em 0em 1em 0em',
+        backgroundColor: 'var(--background)',
     },
     navHeader: {
         flex: 0.95,

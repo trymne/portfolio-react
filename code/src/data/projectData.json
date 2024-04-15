@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "NTNU Ping Pong League",
-    "description": "In this project the goal was to create a fully functional online table tennis league...",
+    "description": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, admin page, email verification and documentation through swagger and storybook.",
     "image": "img/ppl-mockup-desktop.png",
     "alt": "Mockup of the ping pong league site",
     "githubUrl": "https://github.com/Simenfhe/ppl",
@@ -11,10 +11,27 @@
   {
     "id": 2,
     "title": "AI Learning Tool",
-    "description": "In this project we are creating a tool that uses AI to assist teachers...",
+    "description": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience.",
     "image": "img/ai-tool.png",
     "alt": "Mockup of the website for the AI learning tool",
-    "githubUrl": "#",
-    "liveUrl": "#"
+    "githubUrl": "",
+    "liveUrl": "https://studiehjelp.no/"
+  },
+  {
+    "id": 3,
+    "title": "NTNU Capmap",
+    "description": "Through CapMap we wanted to create a system that utilized ultrasonic sensors to predict how crowded different rooms at school were. This way students could easily find a place to study, and the school could optimize the use of their space.",
+    "image": "img/ntnu-capmap.png",
+    "alt": "Mockup of the ping pong league site",
+    "githubUrl": ","
+  },
+  {
+    "id": 4,
+    "title": "CSS art",
+    "description": "In this project the goal was to recreate an image through CSS only. This was apart of the course Advanced CSS that we had in our second semester.",
+    "deschtml": "<b>Disclaimer:</b> The image is not responsive and is only meant to be viewed on a desktop.",
+    "image": "img/css-art-mockup.png",
+    "alt": "Mockup of the ping pong league site",
+    "githubUrl": ""
   }
 ]
