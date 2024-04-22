@@ -22,16 +22,31 @@
 
   /*13-segment display settings*/
   --sgmnt-bgcolor: var(--dark-bg);
-  --sgmnt-size: 15px;
+  --sgmnt-size: 20px;
   --sgmnt-color: var(--text-light);
 
 
   scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 1.3em;
+  }
+}
+
 #root {
   min-width: 100%;
 }
+
+article a {
+  color: var(--link-dark);
+}
+article a:hover, article a:focus-visible {
+  color: var(--clr--purple);
+  text-decoration: underline;
+}
+
 
 @keyframes logo-spin {
   from {

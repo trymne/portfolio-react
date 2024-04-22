@@ -1,15 +1,6 @@
 [
   {
     "id": 1,
-    "title": "NTNU Ping Pong League",
-    "description": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, admin page, email verification and documentation through swagger and storybook.",
-    "image": "img/ppl-mockup-desktop.png",
-    "alt": "Mockup of the ping pong league site",
-    "githubUrl": "https://github.com/Simenfhe/ppl",
-    "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/"
-  },
-  {
-    "id": 2,
     "title": "AI Learning Tool",
     "description": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience.",
     "image": "img/ai-tool.png",
@@ -19,14 +10,32 @@
   },
   {
     "id": 3,
-    "title": "NTNU Capmap",
-    "description": "Through CapMap we wanted to create a system that utilized ultrasonic sensors to predict how crowded different rooms at school were. This way students could easily find a place to study, and the school could optimize the use of their space.",
-    "image": "img/ntnu-capmap.png",
+    "title": "NTNU Ping Pong League",
+    "description": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, admin page, email verification and documentation through swagger and storybook.",
+    "image": "img/ppl-mockup-desktop.png",
     "alt": "Mockup of the ping pong league site",
-    "githubUrl": ","
+    "githubUrl": "https://github.com/Simenfhe/ppl",
+    "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/"
   },
   {
+    "id": 2,
+    "title": "13-segment display",
+    "deschtml": "In this project I wanted to create a 13-segmentet display, after being inspired by a <a target=\"_blank\" href=\"https://www.youtube.com/watch?v=RTB5XhjbgZA&ab_channel=Posy\">youtube video</a>. I created this segment display as a web component, and focusing on making it highly customizable. The colours and size can be altered either from the HTML or thorugh CSS. The segment display can also be used to print out a custom text instead of this customizeable clock.",
+    "sgmnt": "true",
+    "githubUrl": "https://github.com/trymne/Segment-display"
+  },
+
+  {
     "id": 4,
+    "title": "NTNU CapMap",
+    "description": "Through CapMap we wanted to create a system that utilized ultrasonic sensors to predict how crowded different rooms at school were. This way students could easily find a place to study, and the school could optimize the use of their space.",
+    "image": "img/ntnu-capmap.png",
+    "imgTall": "true",
+    "alt": "Mockup of the ping pong league site",
+    "githubUrl": "https://github.com/Simenfhe/Iot"
+  },
+  {
+    "id": 5,
     "title": "CSS art",
     "description": "In this project the goal was to recreate an image through CSS only. This was apart of the course Advanced CSS that we had in our second semester.",
     "deschtml": "<b>Disclaimer:</b> The image is not responsive and is only meant to be viewed on a desktop.",
