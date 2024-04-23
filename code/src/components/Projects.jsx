@@ -19,6 +19,7 @@ const styles = stylex.create({
   projectLink: {
     color: 'rgb(196, 55, 224)', // Assuming direct usage, replace with a variable or a constant if needed
     textDecoration: 'none',
+    height: 'fit-content',
     ':hover': {
       textDecoration: 'underline',
     },
@@ -56,6 +57,7 @@ const styles = stylex.create({
   linkCont: {
     display: 'flex',
     justifyContent: 'center',
+    alignItems: 'center',
     marginTop: '1em',
     gap: '1em',
   },
@@ -63,6 +65,9 @@ const styles = stylex.create({
     height: 'auto',
     width: '50%',
     maxWidth: '900px',
+  },
+  h3: {
+    fontSize: '1.5em',
   },
   // More styles...
 });
@@ -88,7 +93,7 @@ const Projects = () => {
 
       {projectData.map((project, index) => (
         <article key={project.id} {...stylex.props(styles.projectArticle, index % 2 === 0 && styles.darkBG)}>
-          <h3>{project.title}</h3>
+          <h3 {...stylex.props(styles.h3)} >{project.title}</h3>
           <div {...stylex.props(styles.imgContainer)}>
             {/*----------IMAGE------*/}
             {project.image && <img
@@ -124,16 +129,17 @@ const Projects = () => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              {...stylex.props(styles.projectLink)} // Apply styles for links
+              id='project' // For className, use stylex() directly
             >
               GitHub
             </a>}
+            <button id='project' >Read More</button>
             {project.liveUrl &&
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                {...stylex.props(styles.projectLink)} // Reapply the same styles for the second link
+                id='project'// Reapply the same styles for the second link
               >
                 Live Version
               </a>}
@@ -145,3 +151,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

@@ -27,7 +27,60 @@
 
 
   scroll-behavior: smooth;
+
 }
+
+article:nth-of-type(2n + 1) a#project, article:nth-of-type(2n + 1) button#project {
+  --hover-color: var(--text-light);
+  --color: var(--dark-bg);
+  color: var(--link-dark);
+}
+
+article:nth-of-type(2n +1) a#project:hover, article:nth-of-type(2n + 1) button#project:hover, article:nth-of-type(2n +1) a#project:focus-visible, article:nth-of-type(2n + 1) button#project:focus-visible {
+  --color: var(--link-dark);
+  color: var(--text-light);
+}
+
+
+button#project, a#project {
+
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: var(--text-light);
+  --hover-color: black;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  font-size: 1em;
+  color: var(--clr--purple);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button#project:hover,
+button#project:focus-visible, a#project:hover, a#project:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  --color: var(--clr--purple);
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+button#project:active, a#project:active {
+  background: var(--color);
+  color: #fff;
+}
+
 
 @media screen and (min-width: 1200px) {
   :root {
