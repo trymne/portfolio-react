@@ -1,7 +1,9 @@
 import * as stylex from '@stylexjs/stylex';
 import projectData from '../data/projectData';
 import React from 'react';
+import TechIcon from './TechIcon.jsx';
 import './segmentDisplay.js'
+import { Link } from 'react-router-dom';
 
 const styles = stylex.create({
   projectsContainer: {
@@ -32,6 +34,9 @@ const styles = stylex.create({
     marginTop: '2em',
     fontSize: '2em',
     textAlign: 'center',
+    '@media (max-width: 600px)': {
+      fontSize: '1.5em', // Smaller font size on smaller screens
+    },
   },
   darkBG: {
     backgroundColor: '#1e2334;',
@@ -40,6 +45,10 @@ const styles = stylex.create({
   projectContent: {
     maxWidth: '80%',
     width: '60ch',
+    '@media (max-width: 600px)': {
+      width: '90%', // More width in smaller screens
+      maxWidth: 'none',
+    },
   },
   imgContainer: {
     display: 'flex',
@@ -48,11 +57,17 @@ const styles = stylex.create({
   projectImage: {
     width: '100%',
     maxWidth: '900px',
+    '@media (max-width: 600px)': {
+      maxWidth: '100%',
+    },
   },
   tallImage: {
     width: '50%',
     maxWidth: '900px',
     height: 'auto',
+    '@media (max-width: 600px)': {
+      width: '700%',
+    },
   },
   linkCont: {
     display: 'flex',
@@ -60,6 +75,10 @@ const styles = stylex.create({
     alignItems: 'center',
     marginTop: '1em',
     gap: '1em',
+    '@media (max-width: 600px)': {
+      flexDirection: 'column',
+      gap: '0.5em',
+    },
   },
   imgTall: {
     height: 'auto',
@@ -68,6 +87,12 @@ const styles = stylex.create({
   },
   h3: {
     fontSize: '1.5em',
+  },
+  techList: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '1em',
+    marginTop: '1em',
   },
   // More styles...
 });
@@ -104,14 +129,12 @@ const Projects = () => {
             {project.sgmnt &&
               <>
                 <sgmnt-display
-                  size="60"
-                  text="!#msdD"
-                  sgClr="white"
-                  bgClr="red"
+                  size="20px"
+                  text="!#ms"
+                  sgClr="#F5F5F5"
+                  bgClr="#1e2334"
                   dayVersion=""
                 ></sgmnt-display>
-
-
 
               </>
             }
@@ -121,6 +144,15 @@ const Projects = () => {
           </p>
           <p {...stylex.props(styles.projectContent)} dangerouslySetInnerHTML={{ __html: project.deschtml }} >
           </p>
+
+          {/* TECHNOLOGIES*/
+            project.technologies &&
+            <div {...stylex.props(styles.techList)}>
+              {project.technologies.map((item, index) => (
+                <TechIcon key={index} item={item} />
+              ))}
+            </div>
+          }
 
 
           {/* LINK*/}
@@ -133,7 +165,7 @@ const Projects = () => {
             >
               GitHub
             </a>}
-            <button id='project' >Read More</button>
+            <Link to={`/projects/${project.link}`} id="project" > Read more</Link>
             {project.liveUrl &&
               <a
                 href={project.liveUrl}

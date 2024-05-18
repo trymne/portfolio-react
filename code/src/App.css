@@ -5,6 +5,9 @@
   will-change: filter;
   transition: filter 300ms;
 }
+* {
+  box-sizing: border-box;
+}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -19,11 +22,12 @@
   --background: #F5F5F5;
   --text-light: #F5F5F5;
   --link-dark: rgb(196, 55, 224);
+  --sgmnt-size: 20px;
 
   /*13-segment display settings*/
-  --sgmnt-bgcolor: var(--dark-bg);
-  --sgmnt-size: 20px;
-  --sgmnt-color: var(--text-light);
+  /* --sgmnt-bgcolor: var(--dark-bg);
+  
+  --sgmnt-color: var(--text-light); */
 
 
   scroll-behavior: smooth;
@@ -44,13 +48,17 @@ article:nth-of-type(2n +1) a#project:hover, article:nth-of-type(2n + 1) button#p
 
 button#project, a#project {
 
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
+  --b: 3px;  
+  --s: .45em; 
   --color: var(--text-light);
   --hover-color: black;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   font-size: 1em;
   color: var(--clr--purple);
+  padding: .5em 1em;
+  border-radius: 8px;
+  width: 8em;
+  box-sizing: border-box;
+  text-align: center;
   --_p: var(--s);
   background:
     conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)

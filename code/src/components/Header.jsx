@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as stylex from "@stylexjs/stylex";
+import { Link } from "react-router-dom";
 
 
 // Define your styles here
@@ -18,7 +19,7 @@ const styles = stylex.create({
         paddingLeft: '1rem',
     },
     navTitle: {
-        fontSize: '20px',
+        fontSize: '1.3rem',
         cursor: 'pointer',
         fontWeight: 600,
         color: 'var(--text-color)',
@@ -141,7 +142,9 @@ const Header = () => {
                     style={{ display: 'none' }} // Hide the actual checkbox
                 />
                 <div {...stylex.props(styles.navHeader)}>
-                    <a href="#" {...stylex.props(styles.navTitle)}>Home</a>
+                    <Link
+                        to="/"
+                        {...stylex.props(styles.navTitle)}>Home</Link>
                 </div>
                 <div {...stylex.props(styles.navBtn)} onClick={toggleNav}>
                     <label htmlFor="nav-check" {...stylex.props(styles.navBtnLabel)}>

@@ -2,7 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import * as stylex from '@stylexjs/stylex'
 import Header from './components/Header'
-import Footer from './components/Footer'
+import OneProject from './components/OneProject'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import Landing from './components/Landing'
 import './App.css'
 
@@ -22,11 +28,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div {...stylex.props(styles.grid)}>
-      <Header />
-      <Landing />
-      <Footer />
-    </div>
+    <Router>
+      <div {...stylex.props(styles.grid)}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/projects/:projectName" element={<OneProject />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
