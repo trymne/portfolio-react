@@ -3,10 +3,25 @@
     "id": 1,
     "link": "AI_tool",
     "title": "AI Learning Tool",
+    "d_intro": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience.",
     "description": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience.",
+    "deschtml": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience.",
     "image": "img/ai-tool.png",
     "alt": "Mockup of the website for the AI learning tool",
     "githubUrl": "",
+    "detailed": [
+      {
+        "p": "In this project we are createing a tool that uses AI to assist teachers in providing personalized educarion for students. The essence of the tool is to streamline the adaptation of texts, making the process more efficient and less time-consuming. By allowing teachers to input original texts, the tool ensures quality while offering functionalities like image scanning and automated glossary generation to enhance user experience."
+      },
+      {
+        "h2": "The AI",
+        "p": "The AI is trained on a dataset of 1000+ texts, and is able to generate a glossary based on the text that is inputted. The AI is also able to scan images and generate a description of the image."
+      },
+      {
+        "h2": "Future work",
+        "p": "In the future we want to make the tool more user friendly, and make it more accessible. We also want to make the AI more accurate, and make it able to generate a glossary in more languages. Lastly we want to make the tool more responsive, and make it look good on all screen sizes."
+      }
+    ],
     "liveUrl": "https://studiehjelp.no/",
     "technologies": [
       {
@@ -39,7 +54,29 @@
     "image": "img/ppl-mockup-desktop.png",
     "alt": "Mockup of the ping pong league site",
     "githubUrl": "https://github.com/Simenfhe/ppl",
-    "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/"
+    "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/",
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "react.svg"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb.png"
+      },
+      {
+        "name": "Swagger",
+        "icon": "swagger.svg"
+      },
+      {
+        "name": "Storybook",
+        "icon": "storybook.svg"
+      }
+    ]
   },
   {
     "id": 2,
@@ -55,7 +92,7 @@
       },
       {
         "sgmnt": "IN CODE",
-        "code": "<segment-display text='IN CODE' bg-color='white' sg-color='pink'></segment-display>"
+        "code": "<sgmnt-display text='IN CODE' bg-color='white' sg-color='pink'></sgmnt-display>"
       },
       {
         "h2": "Future work",
@@ -78,7 +115,29 @@
     "image": "img/ntnu-capmap.png",
     "imgTall": "true",
     "alt": "Mockup of the ping pong league site",
-    "githubUrl": "https://github.com/Simenfhe/Iot"
+    "githubUrl": "https://github.com/Simenfhe/Iot",
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "react.svg"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs.svg"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb.png"
+      },
+      {
+        "name": "Raspberry Pi",
+        "icon": "raspberrypi.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "redis.svg"
+      }
+    ]
   },
   {
     "id": 5,
@@ -88,6 +147,12 @@
     "deschtml": "<b>Disclaimer:</b> The image is not responsive and is only meant to be viewed on a desktop.",
     "image": "img/css-art-mockup.png",
     "alt": "Mockup of the ping pong league site",
-    "githubUrl": ""
+    "githubUrl": "",
+    "technologies": [
+      {
+        "name": "CSS",
+        "icon": "css.svg"
+      }
+    ]
   }
 ]

@@ -154,8 +154,8 @@ const Header = () => {
                     </label>
                 </div>
                 <ul {...stylex.props(styles.navList, isNavOpen ? [styles.navList, styles.showNav] : [styles.navList])}>
-                    <li><a href="#about" {...stylex.props(styles.navLink)}>About</a></li>
-                    <li><a href="#projects" {...stylex.props(styles.navLink)}>Projects</a></li>
+                    <Link to="/projects/AI_tool" {...stylex.props(styles.navLink)}>AI tool</Link>
+                    <Link to="/resume" {...stylex.props(styles.navLink)}>Resume</Link>
                     <li><a href="#contact" {...stylex.props(styles.navLink)}>Contact</a></li>
                 </ul>
             </nav>

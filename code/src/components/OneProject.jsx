@@ -62,6 +62,23 @@ const styles = stylex.create({
         display: 'flex',
         justifyContent: 'center',
     },
+    techList: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '1em',
+        marginTop: '1em',
+    },
+    linkCont: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '1em',
+        gap: '1em',
+        '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            gap: '0.5em',
+        },
+    },
 
 });
 
@@ -91,9 +108,11 @@ const sgClr = 'rgb(196, 55, 224)';
 function OneProject() {
     let { projectName } = useParams();
     const project = projectData.find((project) => project.link === projectName);
+    console.log(project);
     let name;
     if (!project) {
         name = 'not-found';
+        console.log('Project not found');
     }
 
     if (project) {
@@ -116,6 +135,25 @@ function OneProject() {
                 <p {...stylex.props(styles.p)}>{project.intro}</p>
                 : <p {...stylex.props(styles.p)} dangerouslySetInnerHTML={{ __html: project.d_intro }} ></p>
             }
+
+            {/* LINK*/}
+            <div {...stylex.props(styles.linkCont)}>
+                {project.githubUrl && <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>}
+                {project.liveUrl &&
+                    <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live Version
+                    </a>}
+            </div>
 
             {project.detailed.map((item, index) => {
                 return (
@@ -140,12 +178,14 @@ function OneProject() {
             }
             )}
 
-            {/*Technologies*/}
-            {project.technologies.map((item, index) => {
-                return (
-                    <TechIcon key={index} item={item} />
-                );
-            })}
+            <div {...stylex.props(styles.techList)}>
+                {/*Technologies*/}
+                {project.technologies.map((item, index) => {
+                    return (
+                        <TechIcon key={index} item={item} />
+                    );
+                })}
+            </div>
 
         </article>
     );
