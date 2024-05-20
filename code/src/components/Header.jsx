@@ -12,6 +12,7 @@ const styles = stylex.create({
         display: 'flex',
         alignItems: 'space-between',
         padding: '0.6em 0em 1em 0em',
+        zIndex: 100,
         backgroundColor: 'var(--background)',
     },
     navHeader: {
@@ -40,6 +41,7 @@ const styles = stylex.create({
         top: '100%',
         right: 0,
         left: "auto",
+        backgroundColor: 'var(--background)',
         display: 'none',
         '@media (min-width: 768px)': {
             position: 'static',

@@ -55,8 +55,8 @@ const styles = stylex.create({
     justifyContent: 'center',
   },
   projectImage: {
-    width: '100%',
-    maxWidth: '900px',
+    width: '90%',
+    maxWidth: '700px',
     '@media (max-width: 600px)': {
       maxWidth: '100%',
     },

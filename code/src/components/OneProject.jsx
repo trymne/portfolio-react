@@ -79,6 +79,13 @@ const styles = stylex.create({
             gap: '0.5em',
         },
     },
+    projectImage: {
+        width: '90%',
+        maxWidth: '700px',
+        '@media (max-width: 600px)': {
+            maxWidth: '100%',
+        },
+    },
 
 });
 
@@ -123,6 +130,9 @@ function OneProject() {
     return (
         <article {...stylex.props(styles.article)}>
             <h1 {...stylex.props(styles.h1)}>{name}</h1>
+
+            {project.image && <img {...stylex.props(styles.projectImage)} src={project.image} alt={project.alt} />}
+
             {project.sgmnt &&
                 <sgmnt-display
                     size="20"
@@ -172,7 +182,7 @@ function OneProject() {
                             </div>
                         }
                         {item.code && <CodeDisplay code={item.code} />}
-                        {item.img && <img src={item.img} alt={item.alt} />}
+                        {item.img && <img {...stylex.props(styles.projectImage)} src={item.img} alt={item.alt} />}
                     </article>
                 );
             }
