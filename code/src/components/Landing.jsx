@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Projects from './Projects'; // Assuming Projects is in the same directory
 import * as stylex from "@stylexjs/stylex";
 
@@ -30,17 +30,52 @@ const styles = stylex.create({
         width: '100%',
         maxWidth: '8em',
         margin: '0 2em',
+        transition: 'transform 0.5s',
+    },
+    topImgCont: {
+        display: 'inline-block',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        marginTop: '1em',
+        height: '8em',
+    },
+    imgIsHovered: {
+        transform: 'translateY(4.5em)',
+        transition: 'transform 0.5s',
     },
 });
 
 const Landing = () => {
+    const [imgIsHovered, setImgIsHovered] = useState(false);
+    const [imgSrc, setImgSrc] = useState('/img/avatar-me.png');
+    const [hoverTimer, setHoverTimer] = useState(null);
+
+    const handleMouseEnter = () => {
+        setImgIsHovered(true);
+        const timer = setTimeout(() => {
+            setImgSrc(currentSrc =>
+                currentSrc === '/img/avatar-me.png' ? '/img/avatar-me-white.png' : '/img/avatar-me.png'
+
+            );
+        }, 500);
+        setHoverTimer(timer);
+    }
+
+    const handleMouseLeave = () => {
+        clearTimeout(hoverTimer);
+        setImgIsHovered(false);
+    }
+
     return (
         <main {...stylex.props(styles.mainStyle)}>
             <article {...stylex.props(styles.aboutArticle)}>
                 <div id='about' {...stylex.props(styles.aboutHook)} ></div>
                 <div>
                     <h1 {...stylex.props(styles.h1)} ><span {...stylex.props(styles.clrSpan)} >Heyo,</span> I'm Trym</h1>
-                    <img {...stylex.props(styles.img)} src='/img/avatar-me.png' alt='A cartoon avatar of me' />
+                    <div
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        {...stylex.props(styles.topImgCont)} ><img {...stylex.props(styles.img, imgIsHovered && styles.imgIsHovered)} src={imgSrc} alt='A cartoon avatar of me' /></div>
                 </div>
                 <p>
                     I'm a passionate web developer who loves turning ideas into digital realities. Since my early days, I've had a fascination with building things and a fascination for problem-solving. It's this combination of creativity and analytical thinking that led me down the path of web development.

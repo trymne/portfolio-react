@@ -17,24 +17,105 @@ const styles = stylex.create({
     },
     resumeTitle: {
         fontSize: "2em",
-        margin: "1em",
+        margin: "2em 0 0em",
     },
-    resumeContent: {
+    resumeP: {
         maxWidth: "60ch",
         textAlign: "center",
     },
-    resumeLink: {
-        color: "rgb(196, 55, 224)",
-        textDecoration: "none",
-        height: "fit-content",
-        ":hover": {
-            textDecoration: "underline",
+    resumeH2: {
+        fontSize: "1.5em",
+    },
+    grid: {
+        display: "grid",
+        gridTemplateColumns: "auto 1fr",
+        gap: "10px 20px",
+        alignItems: "start",
+        width: "60%",
+        maxWidth: "800px",
+        margin: "0 auto",
+        "@media (min-width: 600px) and (max-width: 1000px)": {
+            width: "90%",
         },
-        ":focus-visible": {
-            textDecoration: "underline",
+        "@media (max-width: 600px)": {
+            width: "95%",
         },
     },
+    gridItem: {
+        textAlign: "left",
+
+    },
+    gridDate: {
+        fontWeight: "bold",
+        color: "#333",
+        minWidth: "15ch",
+        "@media (max-width: 460px)": {
+            maxWidth: "8ch",
+            minWidth: "8ch",
+        },
+    },
+    textRight: {
+        textAlign: "right",
+    },
+
 });
+
+const AcademicSection = () => {
+    return (
+        <article {...stylex.props(styles.resumeSection)}>
+            <h2 {...stylex.props(styles.resumeH2)}>Conference Contributions</h2>
+            <div {...stylex.props(styles.grid)}>
+                {/* Replace these with your actual conference contributions */}
+                <span {...stylex.props(styles.gridDate, styles.textRight)}>05.2024:</span>
+                <span {...stylex.props(styles.gridItem)}>The Use of Artificial Intelligence for Personalized Learning: Teacher Perspective </span>
+                <span {...stylex.props(styles.gridDate, styles.textRight)}>07.2024:</span>
+                <span {...stylex.props(styles.gridItem)}>The Effective Use of Generative AI for Personalized Learning: An Exploratory Study in the Norwegian Context</span>
+            </div>
+        </article>
+    );
+};
+
+const EducationSection = () => {
+    return (
+        <article {...stylex.props(styles.resumeSection)}>
+            <h2 {...stylex.props(styles.resumeH2)}>Education</h2>
+            <div {...stylex.props(styles.grid)}>
+                <span {...stylex.props(styles.gridDate)}>08.2011 - 06.2014:</span>
+                <span {...stylex.props(styles.gridItem)}>Gausdal Upper Secondary School – Sports Studies, General Sports.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2014 - 07.2015:</span>
+                <span {...stylex.props(styles.gridItem)}>The Armed Forces – Team Leader in the Radio Troop.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2015 - 06.2018:</span>
+                <span {...stylex.props(styles.gridItem)}>Bachelor’s Degree in Physical Education and Sports Studies.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2021 - 06.2024:</span>
+                <span {...stylex.props(styles.gridItem)}>Bachelor’s Degree in Web Development.</span>
+            </div>
+        </article>
+    );
+}
+
+const ExperienceSection = () => {
+    return (
+        <article {...stylex.props(styles.resumeSection)}>
+            <h2 {...stylex.props(styles.resumeH2)}>Work Experience</h2>
+            <div {...stylex.props(styles.grid)}>
+                <span {...stylex.props(styles.gridDate)}>12.2005 – 12.2017:</span>
+                <span {...stylex.props(styles.gridItem)}>World Cup in Ski Jumping, Cross-Country Skiing, and Alpine Skiing, Lillehammer: Organized children's activities, measured distances, and prepared ski jumping hills.</span>
+                <span {...stylex.props(styles.gridDate)}>09.2015 - 02.2016:</span>
+                <span {...stylex.props(styles.gridItem)}>Coordinator and Developer of "Try the Sport" Ski Jumping and Nordic Combined during the Youth Olympics Lillehammer 2016.</span>
+                <span {...stylex.props(styles.gridDate)}>12.2017 - 09.2019:</span>
+                <span {...stylex.props(styles.gridItem)}>Worked on the development, planning, and execution of "Utetimen" (Outdoor Hour).</span>
+                <span {...stylex.props(styles.gridDate)}>08.2018 - 08.2021:</span>
+                <span {...stylex.props(styles.gridItem)}>Responsible for basic training at the Hamar Summer Ski School.</span>
+                <span {...stylex.props(styles.gridDate)}>03.2019 - 03.2020:</span>
+                <span {...stylex.props(styles.gridItem)}>Substitute teacher in physical education at Lillehammer Upper Secondary School, South Campus.</span>
+                <span {...stylex.props(styles.gridDate)}>03.2020 - 06.2020:</span>
+                <span {...stylex.props(styles.gridItem)}>75% temporary position in physical education at Lillehammer Upper Secondary School, South Campus.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2020 - 06.2021:</span>
+                <span {...stylex.props(styles.gridItem)}>70% Substitute teacher at Smestad Junior High School.</span>
+            </div>
+        </article>
+    );
+};
 
 const Resume = () => {
 
@@ -43,19 +124,12 @@ const Resume = () => {
         <div {...stylex.props(styles.resumeContainer)}>
             <article {...stylex.props(styles.resumeSection)}>
                 <h1 {...stylex.props(styles.resumeTitle)}>Resume</h1>
-                <p {...stylex.props(styles.resumeContent)}>
-                    You can download my resume{" "}
-                    <a
-                        {...stylex.props(styles.resumeLink)}
-                        href="https://drive.google.com/file/d/1j3mLZB1h3c2o4B5Jv3t8gZ2YvZl3F6YK/view?usp=sharing"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        here
-                    </a>
-                    .
-                </p>
+                <p {...stylex.props(styles.resumeP)} > Hello! I’m Trym, a newly graduated web developer with a robust background from a bachelor's degree in physical education and sports science. As a web developer, I am equally comfortable working on the front end as I am on the back end. I have a particular passion for problem-solving, which helps me navigate and devise solutions for complex challenges in the coding world.</p>
             </article>
+            <AcademicSection />
+            <EducationSection />
+            <ExperienceSection />
+
         </div>
     );
 }
