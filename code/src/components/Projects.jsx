@@ -56,7 +56,7 @@ const styles = stylex.create({
   },
   projectImage: {
     width: '90%',
-    maxWidth: '700px',
+    maxWidth: '900px',
     '@media (max-width: 600px)': {
       maxWidth: '100%',
     },
@@ -110,7 +110,6 @@ const Projects = () => {
     setDoChange(e.target.value);
   }
 
-  console.log('sgmntText', sgmntText)
 
   return (
     <div {...stylex.props(styles.projectsContainer)} >

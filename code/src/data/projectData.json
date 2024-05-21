@@ -10,17 +10,21 @@
     "githubUrl": "",
     "detailed": [
       {
-        "p": "ADD TEXT HERE",
         "img": "/img/stud_out_mock.png",
         "alt": "Mockup of the website. The image shows the output of the AI tool, with the text in a rich text editor."
       },
       {
-        "h2": "The AI",
-        "p": "The AI is trained on a dataset of 1000+ texts, and is able to generate a glossary based on the text that is inputted. The AI is also able to scan images and generate a description of the image."
+        "p": "Last summer, I had an idea to build a learning tool with AI that could make studying more efficient for students. I was joined by a fellow student on this project, and together we have continued to develop this tool over the past year. The tool has evolved from assisting students to focusing on making teachers' daily lives more efficient by automating the personalization of texts for individual students.",
+        "img": "/img/pitch-win.png",
+        "alt": "Image of a pitch competition we won. The image shows the two of us holding a diploma.",
+        "imgsmall": "true"
+      },
+      {
+        "p": "Throughout the project, we have been involved in business development, worked towards engaging stakeholders, participated in and won pitch competitions, and developed research that resulted in two (soon to be published) conference papers—one as the main author and the other as a co-author."
       },
       {
         "h2": "Future work",
-        "p": "In the future we want to make the tool more user friendly, and make it more accessible. We also want to make the AI more accurate, and make it able to generate a glossary in more languages. Lastly we want to make the tool more responsive, and make it look good on all screen sizes."
+        "p": "We are countuing the work on this proect, and are currently working on improving the efficiency of the tool. We are also working on introducing more tools to our website."
       }
     ],
     "liveUrl": "https://studiehjelp.no/",
@@ -50,9 +54,10 @@
   {
     "id": 3,
     "link": "NTNU_PPL",
+    "intro": "This project was the exam in our 4th semester course: Full-stack webutvikling (Full-stack web development). We were 3 people in our group, and we all had different roles in the project. Initially I was responsible for the backend, but as the project progressed I also took on the role of frontend developer.",
     "title": "NTNU Ping Pong League",
-    "description": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, admin page, email verification and documentation through swagger and storybook.",
-    "image": "img/ppl-mockup-desktop.png",
+    "description": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, web components, admin page, email verification and documentation through swagger and storybook.",
+    "image": "/img/ppl-mockup-desktop.png",
     "alt": "Mockup of the ping pong league site",
     "githubUrl": "https://github.com/Simenfhe/ppl",
     "liveUrl": "https://ntnuppl-19e525f11c91.herokuapp.com/",
@@ -76,6 +81,15 @@
       {
         "name": "Storybook",
         "icon": "storybook.svg"
+      }
+    ],
+    "detailed": [
+      {
+        "p": "In this project the goal was to create a fully functional online table tennis league. Some of the things we implemented in this project were: \"multiplayer\" scoring registration through socket, refresh tokens, web components, admin page, email verification and documentation through swagger and storybook."
+      },
+      {
+        "img": "/img/ppl-mockup-match.png",
+        "alt": "Mockup of the ping pong league showing a match through socket.io"
       }
     ]
   },
@@ -112,8 +126,9 @@
     "id": 4,
     "link": "ntnu-capmap",
     "title": "NTNU CapMap",
+    "intro": "This was a part of the 5th semester course: Tingenes web (Web of things). Through CapMap we wanted to create a system that utilized ultrasonic sensors to predict how crowded different rooms at school were. This way students could easily find a place to study, and the school could optimize the use of their space. In this project we were 2 web developers and 3 interaction designers. I was responsible for the backend, while the other web developer was responsible for the frontend and the sensors.",
     "description": "Through CapMap we wanted to create a system that utilized ultrasonic sensors to predict how crowded different rooms at school were. This way students could easily find a place to study, and the school could optimize the use of their space.",
-    "image": "img/ntnu-capmap.png",
+    "image": "/img/ntnu-capmap.png",
     "imgTall": "true",
     "alt": "Mockup of the ping pong league site",
     "githubUrl": "https://github.com/Simenfhe/Iot",
@@ -138,17 +153,29 @@
         "name": "Redis",
         "icon": "redis.svg"
       }
+    ],
+    "detailed": [
+      {
+        "p": "In this project I got to with many new technologies for the first time, such as Redis, MQTT and SSE (Server Sent Events). It was also inspireing to be able to work with a physical product that we could interact with through the website."
+      }
     ]
   },
   {
     "id": 5,
     "link": "css-art",
     "title": "CSS art",
+    "intro": "In this project the goal was to recreate an image through CSS only. This was apart of the course Advanced CSS that we had in our second semester.",
     "description": "In this project the goal was to recreate an image through CSS only. This was apart of the course Advanced CSS that we had in our second semester.",
     "deschtml": "<b>Disclaimer:</b> The image is not responsive and is only meant to be viewed on a desktop.",
-    "image": "img/css-art-mockup.png",
+    "image": "/img/css-art-mockup.png",
     "alt": "Mockup of the ping pong league site",
+    "liveUrl": "https://folk.ntnu.no/trymne/single-project/car/",
     "githubUrl": "",
+    "detailed": [
+      {
+        "p": "In this project we aimed to recreate an image of a truck through CSS only. The image is not responsive and is only meant to be viewed on a desktop."
+      }
+    ],
     "technologies": [
       {
         "name": "CSS",

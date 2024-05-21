@@ -104,7 +104,8 @@ const styles = stylex.create({
             flexDirection: 'column',
             gap: '0.5rem',
         },
-    }
+    },
+
 });
 
 const Header = () => {

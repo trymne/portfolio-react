@@ -19,11 +19,17 @@ const styles = stylex.create({
         color: 'rgb(137, 17, 161)', // Assuming direct usage, replace with a variable or a constant if needed
     },
     h1: {
+        display: 'inline-block',
         textAlign: 'center',
         fontSize: '2.5em',
         marginTop: '1.5em',
     },
     aboutHook: {
+    },
+    img: {
+        width: '100%',
+        maxWidth: '8em',
+        margin: '0 2em',
     },
 });
 
@@ -32,7 +38,10 @@ const Landing = () => {
         <main {...stylex.props(styles.mainStyle)}>
             <article {...stylex.props(styles.aboutArticle)}>
                 <div id='about' {...stylex.props(styles.aboutHook)} ></div>
-                <h1 {...stylex.props(styles.h1)} ><span {...stylex.props(styles.clrSpan)} >Heyo,</span> I'm Trym</h1>
+                <div>
+                    <h1 {...stylex.props(styles.h1)} ><span {...stylex.props(styles.clrSpan)} >Heyo,</span> I'm Trym</h1>
+                    <img {...stylex.props(styles.img)} src='/img/avatar-me.png' alt='A cartoon avatar of me' />
+                </div>
                 <p>
                     I'm a passionate web developer who loves turning ideas into digital realities. Since my early days, I've had a fascination with building things and a fascination for problem-solving. It's this combination of creativity and analytical thinking that led me down the path of web development.
                 </p>

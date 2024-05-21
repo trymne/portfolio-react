@@ -89,12 +89,19 @@ button#project:active, a#project:active {
   color: #fff;
 }
 
-
 @media screen and (min-width: 1200px) {
   :root {
     font-size: 1.3em;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  :root {
+    font-size: 1.5em;
+  }
+}
+
+
 
 #root {
   min-width: 100%;

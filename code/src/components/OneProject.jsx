@@ -10,9 +10,9 @@ import './segmentDisplay.js'
 
 const styles = stylex.create({
     h1: {
-        fontSize: '3em',
+        fontSize: '2em',
         textAlign: 'center',
-        margin: '1em',
+        margin: '1.8em',
         '@media (max-width: 600px)': {
             fontSize: '2em',
             margin: "1.5em"
@@ -45,13 +45,14 @@ const styles = stylex.create({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        padding: '0.4em 0',
     },
     p: {
         textAlign: 'center',
         maxWidth: '60ch',
         '@media (max-width: 600px)': {
-            maxWidth: '90%', // Use more of the screen width on small devices
-            fontSize: '1em', // Optionally adjust font size for readability
+            maxWidth: '90%',
+            fontSize: '1em',
         },
     },
     code: {
@@ -85,6 +86,14 @@ const styles = stylex.create({
         '@media (max-width: 600px)': {
             maxWidth: '100%',
         },
+    },
+    imgSmall: {
+        width: '70%',
+        maxWidth: '600px',
+    },
+    imgTall: {
+        width: '50%',
+        maxWidth: '500px',
     },
 
 });
@@ -131,7 +140,7 @@ function OneProject() {
         <article {...stylex.props(styles.article)}>
             <h1 {...stylex.props(styles.h1)}>{name}</h1>
 
-            {project.image && <img {...stylex.props(styles.projectImage)} src={project.image} alt={project.alt} />}
+            {project.image && <img {...stylex.props(styles.projectImage, project.imgTall && styles.imgTall)} src={project.image} alt={project.alt} />}
 
             {project.sgmnt &&
                 <sgmnt-display
@@ -182,7 +191,9 @@ function OneProject() {
                             </div>
                         }
                         {item.code && <CodeDisplay code={item.code} />}
-                        {item.img && <img {...stylex.props(styles.projectImage)} src={item.img} alt={item.alt} />}
+                        {item.img &&
+                            <img {...stylex.props(styles.projectImage, item.imgsmall && styles.imgSmall)} src={item.img} alt={item.alt} />
+                        }
                     </article>
                 );
             }
