@@ -60,6 +60,7 @@ const styles = stylex.create({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        textDecoration: "none",
     },
     logoCont: {
         display: "flex",
