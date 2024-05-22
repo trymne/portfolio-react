@@ -4,7 +4,7 @@ import * as stylex from "@stylexjs/stylex";
 const CONTACT_LINKS = [
     { name: "GitHub", url: "https://github.com/trymne" },
     { name: "Instagram", url: "https://www.instagram.com/trymnerem/" },
-    { name: "LinkedIn", url: "https://linkedin.com" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/trym-simensen-nerem-b4260330b/" },
 ];
 
 const styles = stylex.create({
