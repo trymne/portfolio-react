@@ -64,6 +64,9 @@ const styles = stylex.create({
         ":hover": {
             textDecoration: "underline",
         },
+        ":focus-visible": {
+            textDecoration: "underline",
+        },
     },
 
 });

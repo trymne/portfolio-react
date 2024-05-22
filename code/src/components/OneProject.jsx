@@ -55,6 +55,15 @@ const styles = stylex.create({
             fontSize: '1em',
         },
     },
+    link: {
+        textDecoration: 'none',
+        ":hover": {
+            textDecoration: "underline",
+        },
+        ":focus-visible": {
+            textDecoration: "underline",
+        },
+    },
     code: {
         maxWidth: '60ch',
         textAlign: 'center',
@@ -160,6 +169,7 @@ function OneProject() {
             {/* LINK*/}
             <div {...stylex.props(styles.linkCont)}>
                 {project.githubUrl && <a
+                    {...stylex.props(styles.link)}
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -169,6 +179,7 @@ function OneProject() {
                 {project.liveUrl &&
                     <a
                         href={project.liveUrl}
+                        {...stylex.props(styles.link)}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
