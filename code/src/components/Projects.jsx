@@ -164,18 +164,18 @@ const Projects = () => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              id='project' // For className, use stylex() directly
+              className='project-links' // For className, use stylex() directly
             >
               GitHub
             </a>}
-            <Link {...stylex.props(styles.stateLink)} to={`/projects/${project.link}`} id="project" > Read more</Link>
+            <Link {...stylex.props(styles.stateLink)} to={`/projects/${project.link}`} className="project-links" > Read more</Link>
             {project.liveUrl &&
               <a
                 href={project.liveUrl}
                 {...stylex.props(styles.stateLink)}
                 target="_blank"
                 rel="noopener noreferrer"
-                id='project'// Reapply the same styles for the second link
+                className='project-links'// Reapply the same styles for the second link
               >
                 Live Version
               </a>}
