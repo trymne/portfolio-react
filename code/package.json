@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "serve": "serve dist"
+    "serve": "serve dist",
+    "start": "node index.js"
   },
   "dependencies": {
     "@stylexjs/stylex": "^0.4.1",
