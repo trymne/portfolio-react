@@ -4,6 +4,7 @@ import * as stylex from '@stylexjs/stylex'
 import Header from './components/Header'
 import OneProject from './components/OneProject'
 import Resume from './components/resume'
+import Contact from './components/Contact'
 import {
   BrowserRouter as Router,
   Routes,
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/projects/:projectName" element={<OneProject />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

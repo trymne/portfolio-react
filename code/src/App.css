@@ -15,6 +15,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --text-color: black;
   --clr--purple: rgb(137, 17, 161);
@@ -54,6 +58,7 @@ button#project, a#project {
   --hover-color: black;
   font-size: 1em;
   color: var(--clr--purple);
+  font-weight: 500;
   padding: .5em 1em;
   border-radius: 8px;
   width: 8em;
@@ -111,7 +116,6 @@ article a {
   color: var(--link-dark);
 }
 article a:hover, article a:focus-visible {
-  color: var(--clr--purple);
   text-decoration: underline;
 }
 

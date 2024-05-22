@@ -42,6 +42,9 @@ const styles = stylex.create({
     backgroundColor: '#1e2334;',
     color: '#f5f5f5',
   },
+  stateLink: {
+    textDecoration: 'none',
+  },
   projectContent: {
     maxWidth: '80%',
     width: '60ch',
@@ -157,6 +160,7 @@ const Projects = () => {
           {/* LINK*/}
           <div {...stylex.props(styles.linkCont)}>
             {project.githubUrl && <a
+              {...stylex.props(styles.stateLink)}
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -164,10 +168,11 @@ const Projects = () => {
             >
               GitHub
             </a>}
-            <Link to={`/projects/${project.link}`} id="project" > Read more</Link>
+            <Link {...stylex.props(styles.stateLink)} to={`/projects/${project.link}`} id="project" > Read more</Link>
             {project.liveUrl &&
               <a
                 href={project.liveUrl}
+                {...stylex.props(styles.stateLink)}
                 target="_blank"
                 rel="noopener noreferrer"
                 id='project'// Reapply the same styles for the second link

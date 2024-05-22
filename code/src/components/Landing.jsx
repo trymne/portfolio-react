@@ -16,13 +16,19 @@ const styles = stylex.create({
         marginTop: '3em',
     },
     clrSpan: {
-        color: 'rgb(137, 17, 161)', // Assuming direct usage, replace with a variable or a constant if needed
+        color: 'rgb(137, 17, 161)',
+        display: 'inline-block',
     },
     h1: {
-        display: 'inline-block',
+        display: 'flex',
+        flexWrap: 'wrap',
+        maxWidth: "15ch", // Added to prevent the span from breaking the line
         textAlign: 'center',
         fontSize: '2.5em',
         marginTop: '1.5em',
+        "@media (max-width: 600px)": {
+            textAlign: "start",
+        },
     },
     aboutHook: {
     },
@@ -42,6 +48,11 @@ const styles = stylex.create({
     imgIsHovered: {
         transform: 'translateY(4.5em)',
         transition: 'transform 0.5s',
+    },
+    titleFlex: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'baseline',
     },
 });
 
@@ -70,8 +81,8 @@ const Landing = () => {
         <main {...stylex.props(styles.mainStyle)}>
             <article {...stylex.props(styles.aboutArticle)}>
                 <div id='about' {...stylex.props(styles.aboutHook)} ></div>
-                <div>
-                    <h1 {...stylex.props(styles.h1)} ><span {...stylex.props(styles.clrSpan)} >Heyo,</span> I'm Trym</h1>
+                <div {...stylex.props(styles.titleFlex)} >
+                    <h1 {...stylex.props(styles.h1)} ><span {...stylex.props(styles.clrSpan)} >Heyo,&nbsp;</span> <span>I'm Trym</span></h1>
                     <div
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}

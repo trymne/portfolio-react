@@ -22,6 +22,7 @@ const styles = stylex.create({
     navTitle: {
         fontSize: '1.3rem',
         cursor: 'pointer',
+        textDecoration: 'none',
         fontWeight: 600,
         color: 'var(--text-color)',
         ":hover": {
@@ -77,6 +78,7 @@ const styles = stylex.create({
         borderTop: '2px solid var(--text-color)',
     },
     navLink: {
+        fontWeight: 500,
         textDecoration: 'none',
         color: 'var(--text-color)',
         ':hover': {
@@ -133,7 +135,6 @@ const Header = () => {
         };
     }, []);
 
-    console.log(isNavOpen);
 
     return (
         <header>
@@ -159,7 +160,7 @@ const Header = () => {
                 <ul {...stylex.props(styles.navList, isNavOpen ? [styles.navList, styles.showNav] : [styles.navList])}>
                     <Link to="/projects/AI_tool" {...stylex.props(styles.navLink)}>AI tool</Link>
                     <Link to="/resume" {...stylex.props(styles.navLink)}>Resume</Link>
-                    <li><a href="#contact" {...stylex.props(styles.navLink)}>Contact</a></li>
+                    <Link to="/contact" {...stylex.props(styles.navLink)}>Contact</Link>
                 </ul>
             </nav>
         </header>

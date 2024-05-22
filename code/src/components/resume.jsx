@@ -57,15 +57,22 @@ const styles = stylex.create({
     textRight: {
         textAlign: "right",
     },
+    link: {
+        fontWeight: "500",
+        color: "var(clr--purple)",
+        textDecoration: "none",
+        ":hover": {
+            textDecoration: "underline",
+        },
+    },
 
 });
 
 const AcademicSection = () => {
     return (
         <article {...stylex.props(styles.resumeSection)}>
-            <h2 {...stylex.props(styles.resumeH2)}>Conference Contributions</h2>
+            <h2 {...stylex.props(styles.resumeH2)}>Academic Contributions</h2>
             <div {...stylex.props(styles.grid)}>
-                {/* Replace these with your actual conference contributions */}
                 <span {...stylex.props(styles.gridDate, styles.textRight)}>05.2024:</span>
                 <span {...stylex.props(styles.gridItem)}>The Use of Artificial Intelligence for Personalized Learning: Teacher Perspective </span>
                 <span {...stylex.props(styles.gridDate, styles.textRight)}>07.2024:</span>
@@ -99,11 +106,11 @@ const ExperienceSection = () => {
             <h2 {...stylex.props(styles.resumeH2)}>Work Experience</h2>
             <div {...stylex.props(styles.grid)}>
                 <span {...stylex.props(styles.gridDate)}>12.2005 – 12.2017:</span>
-                <span {...stylex.props(styles.gridItem)}>World Cup in Ski Jumping, Cross-Country Skiing, and Alpine Skiing, Lillehammer: Organized children's activities, measured distances, and prepared ski jumping hills.</span>
+                <span {...stylex.props(styles.gridItem)}>World Cup in Ski Jumping, Cross-Country Skiing, and Alpine Skiing, Lillehammer: Various tasks.</span>
                 <span {...stylex.props(styles.gridDate)}>09.2015 - 02.2016:</span>
                 <span {...stylex.props(styles.gridItem)}>Coordinator and Developer of "Try the Sport" Ski Jumping and Nordic Combined during the Youth Olympics Lillehammer 2016.</span>
                 <span {...stylex.props(styles.gridDate)}>12.2017 - 09.2019:</span>
-                <span {...stylex.props(styles.gridItem)}>Worked on the development, planning, and execution of "Utetimen" (Outdoor Hour).</span>
+                <span {...stylex.props(styles.gridItem)}>Worked on the development, planning, and execution of <a {...stylex.props(styles.link)} href="https://www.skiforbundet.no/norges-skiforbund/nyheter/2022/2/nettsiden-utetimen/" target="_blank">Utetimen</a> (Outdoor Hour).</span>
                 <span {...stylex.props(styles.gridDate)}>08.2018 - 08.2021:</span>
                 <span {...stylex.props(styles.gridItem)}>Responsible for basic training at the Hamar Summer Ski School.</span>
                 <span {...stylex.props(styles.gridDate)}>03.2019 - 03.2020:</span>

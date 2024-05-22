@@ -10,9 +10,9 @@ import './segmentDisplay.js'
 
 const styles = stylex.create({
     h1: {
-        fontSize: '2em',
+        paddingTop: '0.5em',
         textAlign: 'center',
-        margin: '1.8em',
+        margin: '2em 0 1em',
         '@media (max-width: 600px)': {
             fontSize: '2em',
             margin: "1.5em"
@@ -70,6 +70,8 @@ const styles = stylex.create({
         marginTop: '1em',
     },
     linkCont: {
+        marginBottom: '1em',
+        fontWeight: '500',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
