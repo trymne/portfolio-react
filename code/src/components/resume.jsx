@@ -87,14 +87,14 @@ const EducationSection = () => {
         <article {...stylex.props(styles.resumeSection)}>
             <h2 {...stylex.props(styles.resumeH2)}>Education</h2>
             <div {...stylex.props(styles.grid)}>
-                <span {...stylex.props(styles.gridDate)}>08.2011 - 06.2014:</span>
-                <span {...stylex.props(styles.gridItem)}>Gausdal Upper Secondary School – Sports Studies, General Sports.</span>
-                <span {...stylex.props(styles.gridDate)}>08.2014 - 07.2015:</span>
-                <span {...stylex.props(styles.gridItem)}>The Armed Forces – Team Leader in the Radio Troop.</span>
-                <span {...stylex.props(styles.gridDate)}>08.2015 - 06.2018:</span>
-                <span {...stylex.props(styles.gridItem)}>Bachelor’s Degree in Physical Education and Sports Studies.</span>
                 <span {...stylex.props(styles.gridDate)}>08.2021 - 06.2024:</span>
                 <span {...stylex.props(styles.gridItem)}>Bachelor’s Degree in Web Development.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2015 - 06.2018:</span>
+                <span {...stylex.props(styles.gridItem)}>Bachelor’s Degree in Physical Education and Sports Studies.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2014 - 07.2015:</span>
+                <span {...stylex.props(styles.gridItem)}>The Armed Forces – Team Leader in the Radio Troop.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2011 - 06.2014:</span>
+                <span {...stylex.props(styles.gridItem)}>Gausdal Upper Secondary School – Sports Studies, General Sports.</span>
             </div>
         </article>
     );
@@ -105,20 +105,20 @@ const ExperienceSection = () => {
         <article {...stylex.props(styles.resumeSection)}>
             <h2 {...stylex.props(styles.resumeH2)}>Work Experience</h2>
             <div {...stylex.props(styles.grid)}>
-                <span {...stylex.props(styles.gridDate)}>12.2005 – 12.2017:</span>
-                <span {...stylex.props(styles.gridItem)}>World Cup in Ski Jumping, Cross-Country Skiing, and Alpine Skiing, Lillehammer: Various tasks.</span>
-                <span {...stylex.props(styles.gridDate)}>09.2015 - 02.2016:</span>
-                <span {...stylex.props(styles.gridItem)}>Coordinator and Developer of "Try the Sport" Ski Jumping and Nordic Combined during the Youth Olympics Lillehammer 2016.</span>
-                <span {...stylex.props(styles.gridDate)}>12.2017 - 09.2019:</span>
-                <span {...stylex.props(styles.gridItem)}>Worked on the development, planning, and execution of <a {...stylex.props(styles.link)} href="https://www.skiforbundet.no/norges-skiforbund/nyheter/2022/2/nettsiden-utetimen/" target="_blank">Utetimen</a> (Outdoor Hour).</span>
-                <span {...stylex.props(styles.gridDate)}>08.2018 - 08.2021:</span>
-                <span {...stylex.props(styles.gridItem)}>Responsible for basic training at the Hamar Summer Ski School.</span>
-                <span {...stylex.props(styles.gridDate)}>03.2019 - 03.2020:</span>
-                <span {...stylex.props(styles.gridItem)}>Substitute teacher in physical education at Lillehammer Upper Secondary School, South Campus.</span>
-                <span {...stylex.props(styles.gridDate)}>03.2020 - 06.2020:</span>
-                <span {...stylex.props(styles.gridItem)}>75% temporary position in physical education at Lillehammer Upper Secondary School, South Campus.</span>
                 <span {...stylex.props(styles.gridDate)}>08.2020 - 06.2021:</span>
                 <span {...stylex.props(styles.gridItem)}>70% Substitute teacher at Smestad Junior High School.</span>
+                <span {...stylex.props(styles.gridDate)}>03.2020 - 06.2020:</span>
+                <span {...stylex.props(styles.gridItem)}>75% temporary position in physical education at Lillehammer Upper Secondary School, South Campus.</span>
+                <span {...stylex.props(styles.gridDate)}>03.2019 - 03.2020:</span>
+                <span {...stylex.props(styles.gridItem)}>Substitute teacher in physical education at Lillehammer Upper Secondary School, South Campus.</span>
+                <span {...stylex.props(styles.gridDate)}>08.2018 - 08.2021:</span>
+                <span {...stylex.props(styles.gridItem)}>Responsible for basic training at the Hamar Summer Ski School.</span>
+                <span {...stylex.props(styles.gridDate)}>12.2017 - 09.2019:</span>
+                <span {...stylex.props(styles.gridItem)}>Worked on the development, planning, and execution of <a {...stylex.props(styles.link)} href="https://www.skiforbundet.no/norges-skiforbund/nyheter/2022/2/nettsiden-utetimen/" target="_blank">Utetimen</a> (Outdoor Hour).</span>
+                <span {...stylex.props(styles.gridDate)}>09.2015 - 02.2016:</span>
+                <span {...stylex.props(styles.gridItem)}>Coordinator and Developer of "Try the Sport" Ski Jumping and Nordic Combined during the Youth Olympics Lillehammer 2016.</span>
+                <span {...stylex.props(styles.gridDate)}>12.2005 – 12.2017:</span>
+                <span {...stylex.props(styles.gridItem)}>World Cup in Ski Jumping, Cross-Country Skiing, and Alpine Skiing, Lillehammer: Various tasks.</span>
             </div>
         </article>
     );
