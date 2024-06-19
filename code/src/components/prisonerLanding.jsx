@@ -9,6 +9,7 @@ const styles = stylex.create({
         fontWeight: "bold",
         marginBottom: 16,
         color: "black",
+        textAlign: "center",
     },
     main: {
         backgroundColor: "#f5f5f5",
@@ -22,11 +23,14 @@ const styles = stylex.create({
     boxCont: {
         display: "flex",
         flexWrap: "wrap",
+        justifyContent: "center",
         gap: 8,
         maxWidth: 800,
     },
     startSimBtn: {
         padding: "8px 16px",
+        backgroundColor: "black",
+        fontSize: "1em",
         color: "#f5f5f5",
         border: "none",
         borderRadius: 4,
@@ -51,6 +55,7 @@ const styles = stylex.create({
         padding: "8px 16px",
         backgroundColor: "unset",
         color: "rgb(196, 55, 224)",
+        fontSize: "1em",
         border: "none",
         borderRadius: 4,
         cursor: "pointer",

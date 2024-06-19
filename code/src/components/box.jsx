@@ -10,16 +10,17 @@ const styles = stylex.create({
         backgroundColor: "black",
         ':hover': {
             textDecoration: "underline",
+            cursor: "pointer",
         },
         ':focus-visible': {
             textDecoration: "underline",
         },
+        borderRadius: "8px",
     },
     boxNr: {
         fontSize: 22,
         fontWeight: "bold",
         textAlign: "center",
-        color: "white",
         margin: 0,
     },
     boxNrOpened: {

@@ -16,6 +16,7 @@ const styles = stylex.create({
         backgroundColor: 'black',
         ':hover': {
             textDecoration: 'underline',
+            cursor: 'pointer',
         },
         ':focus-visible': {
             textDecoration: 'underline',
