@@ -45,7 +45,7 @@ const styles = stylex.create({
 
     },
     label: {
-        fontSize: 16,
+        fontSize: "0.9em",
         marginBottom: 8,
     },
     range: {
