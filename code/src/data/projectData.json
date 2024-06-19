@@ -121,6 +121,16 @@
       }
     ]
   },
+  {
+    "id": 6,
+    "link": "prisoner",
+    "title": "The 100 prisoners problem",
+    "image": "/img/prisoner.webp",
+    "description": "The \"100 prisoners problem\" is a thought experiment in probability theory and combinatorics. In this problem, 100 numbered prisoners must find their own number in one of 100 boxes to survive. Each box contains a unique number, and each prisoner can open up to 50 boxes. The challenge is for all prisoners to find their numbers within their allowed attempts. To visualize this problem, I created a web application that simulates the prisoners' attempts to find their numbers.",
+    "alt": "Illustration of a prisoner entering the room with the boxes",
+    "githubUrl": "https://github.com/trymne/prisoner-react",
+    "priosner": "true"
+  },
 
   {
     "id": 4,

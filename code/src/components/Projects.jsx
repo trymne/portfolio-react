@@ -19,7 +19,7 @@ const styles = stylex.create({
     paddingBottom: '1em',
   },
   projectLink: {
-    color: 'rgb(196, 55, 224)', // Assuming direct usage, replace with a variable or a constant if needed
+    color: 'rgb(196, 55, 224)',
     textDecoration: 'none',
     height: 'fit-content',
     ':hover': {
@@ -168,7 +168,9 @@ const Projects = () => {
             >
               GitHub
             </a>}
-            <Link {...stylex.props(styles.stateLink)} to={`/projects/${project.link}`} className="project-links" > Read more</Link>
+            {
+              <Link {...stylex.props(styles.stateLink)} to={`/projects/${project.link}`} className="project-links" > Read more</Link>
+            }
             {project.liveUrl &&
               <a
                 href={project.liveUrl}

@@ -5,6 +5,7 @@ import Header from './components/Header'
 import OneProject from './components/OneProject'
 import Resume from './components/resume'
 import Contact from './components/Contact'
+import PrisonerLanding from './components/prisonerLanding'
 import {
   BrowserRouter as Router,
   Routes,
@@ -34,6 +35,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/projects/prisoner" element={<PrisonerLanding />} />
           <Route path="/projects/:projectName" element={<OneProject />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
